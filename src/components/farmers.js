@@ -8,7 +8,7 @@ const Farmer = ({ farmers }) => {
         <tr>
           <th> <span className='table-title'> Nome</span></th>
           <th> <span className='table-title'> Cpf</span></th>
-          <th> <span className='table-title'>Ação</span></th>
+          <th> <span className='table-title'> </span></th>
 
         </tr>
       </thead>
@@ -30,7 +30,7 @@ class Farmers extends Component{
     farmers: []
   }
   componentDidMount() {
-    fetch('http://localhost:8000/api/farmer')
+    fetch('http://localhost:8000/api/farmer/')
     .then(res => res.json() )
     .then( (data) => { this.setState({farmers: data})  } )
     .catch(console.log)

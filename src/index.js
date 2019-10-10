@@ -4,11 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {Route, Link, BrowserRouter as Router} from 'react-router-dom'
-
+import Farmers from './components/farmers';
+import FarmerDetail from './components/farmer_detail';
+import Farms from './components/farms';
+import Agriculturals from './components/agriculturals';
 const routing = (
     <Router>
         <div>
-            <Route path='/produtores' component={App}/>
+            <Route exact path='/produtores' component={Farmers}/>
+            <Route path='/produtores/:id' component={FarmerDetail}/>
+            <Route path='/produtores/:id' component={Farms}/>
+            <Route path='/produtores/:id' component={Agriculturals}/>
+            
         </div>
     </Router>
 )
