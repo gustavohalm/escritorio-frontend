@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import Farms from './farms';
 
 const Farmer_detail = ({ farmer }) => {
 
@@ -8,7 +8,7 @@ const Farmer_detail = ({ farmer }) => {
             <h4>Nome: {farmer.name} | CPF:{farmer.cpf}</h4> <br/>
 
             <h3>Fazendas:</h3>
-        
+
         </div>
     )
   };

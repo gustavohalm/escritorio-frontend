@@ -5,17 +5,22 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
 import FarmerDetail from './components/farmers/farmer_detail';
+import FarmDetail from './components/farms/farm_detail'
 import Farmers from './components/farmers/farmers.js';
 import Farms from './components/farmers/farms';
+
 import Agriculturals from './components/farmers/agriculturals';
 const routing = (
     <Router>
         <div>
             <Route exact path='/produtores' component={Farmers}/>
+           
             <Route path='/produtores/:id' component={FarmerDetail}/>
             <Route path='/produtores/:id' component={Farms}/>
             <Route path='/produtores/:id' component={Agriculturals}/>
-            
+            <Route path='/fazendas/:id' component={FarmDetail}/> 
+           {//  }
+           } 
         </div>
     </Router>
 )
