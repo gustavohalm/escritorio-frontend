@@ -8,6 +8,8 @@ const Agricultural = ({agriculturals}) => {
                 <tr>
                     <th> Nome </th>
                     <th> CNPJ </th>
+                    <th> PORCENTAGEM </th>
+
                 </tr>
             </thead>
             <tbody>
@@ -16,6 +18,10 @@ const Agricultural = ({agriculturals}) => {
                         <tr>
                             <td> {partnership.agricultural.name} </td>
                             <td> {partnership.agricultural.cnpj} </td>
+                            <td> {partnership.percent}% </td>
+
+                            <td> <a href="/agricola/ link "> <button className='btn btn-info'>DETALHES</button> </a> </td>
+
                         </tr>
                     ) )
                 }

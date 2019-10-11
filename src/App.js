@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Farmers from './components/farmers';
+import Farmers from './components/farmers/farmers';
 
 
 

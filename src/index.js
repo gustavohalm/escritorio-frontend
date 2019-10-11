@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {Route, Link, BrowserRouter as Router} from 'react-router-dom'
-import Farmers from './components/farmers';
-import FarmerDetail from './components/farmer_detail';
-import Farms from './components/farms';
-import Agriculturals from './components/agriculturals';
+import {Route, Link, BrowserRouter as Router} from 'react-router-dom';
+import FarmerDetail from './components/farmers/farmer_detail';
+import Farmers from './components/farmers/farmers.js';
+import Farms from './components/farmers/farms';
+import Agriculturals from './components/farmers/agriculturals';
 const routing = (
     <Router>
         <div>

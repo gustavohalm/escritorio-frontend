@@ -9,9 +9,8 @@ const Farm = ({farms}) => {
             <th> <span className='table-title'> CNPJ</span></th>
             <th> <span className='table-title'> NIRF</span></th>
             <th> <span className='table-title'> CCIR</span></th>
+            <th> <span className='table-title'> PORCENTAGEM</span></th>
             <th> <span className='table-title'> </span></th>
-  
-  
           </tr>
         </thead>
         <tbody>
@@ -21,6 +20,7 @@ const Farm = ({farms}) => {
                 <td>{partnership.farm.cnpj}</td>
                 <td>{partnership.farm.nirf}</td>
                 <td>{partnership.farm.ccir}</td>
+                <td>{partnership.percent}%</td>
 
                 <td> <a href="/produtores/{farmer.id}"> <button className='btn btn-info'>DETALHES</button> </a> </td>
             </tr>
