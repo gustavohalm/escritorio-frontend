@@ -1,17 +1,22 @@
 import React, {Component} from 'react';
 import FarmerDetail from '../farmers/farmer_detail';
 import { cloneNode } from '@babel/types';
+import Partnerships from './partnership';
+import Cadesps from './cadesps';
 const Farm_Detail = ({farm}) => {
         return (
             <div className='card'>
-                <h3>{farm.name} - CNPJ {farm.cnpj}</h3> <br/>
-                <p>NIRF:{farm.nirf} </p>
-                <p>CCIR:{farm.ccir} </p>                  
-                <br/>
-                <h5>Cadesp's:</h5>
-<br/>                
-                <h5>Sócios:</h5>
-
+                <div>
+                    <h3>{farm.name} - CNPJ {farm.cnpj}</h3> <br/>
+                    <p>NIRF:{farm.nirf} </p>
+                    <p>CCIR:{farm.ccir} </p>                  
+                </div>
+                <div>
+                    <Partnerships farm={farm.id}/>
+                </div>
+                <div>
+                    <Cadesps farm={farm.id}/>
+                </div>
             </div>
         )
 };
