@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-
+import FarmerForm from './farmer_form';
 const Farmer = ({ farmers }) => {
 
   return(
+    <div>
     <table className='table'>
       <thead>
         <tr>
@@ -22,6 +23,8 @@ const Farmer = ({ farmers }) => {
         ) ) }
       </tbody>
     </table>
+        <FarmerForm />
+    </div>
   )
 };
 class Farmers extends Component{
